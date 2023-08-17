@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task Management </title>
+</head>
+<body>
+    <h1>Task Management</h1>
+    
+    <button id="openDialogButton">Add Task</button>
+    
+    <dialog id="taskDialog">
+        <form id="taskForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4"><</textarea>
+
+            <label for="assignee">Assignee:</label>
+            <input type="email" id="assignee" name="assignee" required>
+
+            <button type="submit">Add Task:</button>
+            <button type="button" id="closeDialogButton">Close</button>
+           
+        </form>
+    </dialog>
+    <h2>Completed Tasks</h2>
+    <div id="completedTasks" class="task-column">
+    </div>
+    
+    <h2>Uncompleted Tasks</h2>
+    <div id="uncompletedTasks" class="task-column">
+    
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>

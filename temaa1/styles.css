@@ -1,0 +1,122 @@
+
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+h1 {
+    text-align: center;
+    color: black;
+    padding: 20px 0;
+}
+
+
+#openDialogButton {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#openDialogButton:hover {
+    background-color: #333;
+}
+
+
+dialog {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task.completed {
+    background-color: #e0e0e0;
+    text-decoration: line-through;
+}
+
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+
+.task-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.task-column {
+    flex: 1;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.task-column h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+#taskForm label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#taskForm input,
+#taskForm textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+#taskForm button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black; 
+    color: white;
+    font-weight: bold; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#taskForm button:hover {
+    background-color: #333; 
+}
+
+
